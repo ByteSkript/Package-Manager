@@ -1,0 +1,10 @@
+action =
+    list ->
+        id = null -> ["x", "y", "z"] // all IDs
+        id = "" -> [{}, {}] // all versions
+    get ->
+        id = string ->
+            version = null -> 010 // artifact latest
+            version = {} -> 010 // artifact
+
+
